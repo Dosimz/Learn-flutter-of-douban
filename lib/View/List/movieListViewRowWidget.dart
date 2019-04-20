@@ -25,14 +25,16 @@ Widget buildListRow(int index, Movie movie, BuildContext context) {
                     children: <Widget>[
                       _buildMoviePoster(movie),
                       _buildTextContent(movie),
-                    ]
-                ),
-              ],
-            )
-        )
-    ),
-  );
-}
+                      _buildActionStar(),
+                                          ]
+                                      ),
+                                    ],
+                                  )
+                              )
+                          ),
+                        );
+                      }
+                      
 
 Widget _buildMoviePoster(Movie movie) {
   return new Container(
@@ -80,6 +82,18 @@ Widget _buildTextContent(Movie movie) {
   );
 }
 
+Widget  _buildActionStar() {
+  return new Padding(
+    padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
+    child: new Column(
+      children: <Widget>[
+        new Icon(Icons.star_border,),
+        new Text('data'),
+      ],
+    ),
+  );
+}
+
 Widget _buildPlayer() {
   return Padding(
     padding: EdgeInsets.fromLTRB(0, 0, 3, 0),
@@ -103,16 +117,6 @@ Widget _buildTitle(Movie movie) {
               fontWeight: FontWeight.w600,
               color: Colors.black,
             ),
-            children: <TextSpan>[
-              TextSpan(
-                text: ' (' + movie.year + ')',
-                style: new TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Color.fromRGBO(150, 150, 150, 1),
-                ),
-              )
-            ]
         ),
         maxLines: 2,
       )
@@ -157,9 +161,10 @@ Widget _buildRatingStar(Movie movie) {
 Widget _buildDetails(Movie movie) {
   var detailsString = '';
 
-  detailsString = movie.director;
-
-  detailsString += '/';
+  detailsString = movie.year;
+  detailsString += ' / ';
+  detailsString += movie.director;
+  detailsString += ' /';
   for (String name in movie.genres) {
     detailsString += ' ' + name;
   }

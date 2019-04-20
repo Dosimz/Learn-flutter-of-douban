@@ -1,16 +1,16 @@
-# movie_top_250
+## Learn Flutter Of Douban
 
-A new Flutter application.
+------
 
-## Getting Started
+> 这是一个通过豆瓣官网还未停止服务的 API 接口来学习 Flutter 的项目
 
-This project is a starting point for a Flutter application.
+## 版本更新历史
 
-A few resources to get you started if this is your first Flutter project:
+> 2019-4-19
+>
+> ​	第一个版本，仅实现了豆瓣电影 TOP250 的展示、电影详情。界面未美化。
+>
+> ### 	app 预览
+>
+> ​	! [image] (https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif)
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
