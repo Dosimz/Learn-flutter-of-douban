@@ -12,6 +12,6 @@
 >
 > ### 	app 预览
 >
-> ​	! [image] (https://github.com/Dosimz/master/Learn-flutter-of-douban/gifPhoto/initState.gif
+> ​	! [image] (https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif
 )
 
