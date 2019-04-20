@@ -26,7 +26,7 @@ class _movieDetailState extends State<MovieDetailWidget> {
   MovieDetail movieDetail;
 
   @override
-  void initState() {
+  void initState() { 
     super.initState();
     _requestData();
   }
@@ -35,7 +35,21 @@ class _movieDetailState extends State<MovieDetailWidget> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text(movie.title),
+          title:  new Text(' '),
+          elevation: 0,
+          bottom: PreferredSize(
+            child: Icon(
+              Icons.blur_on,
+              color: Colors.white,
+              size: 27,
+            ),
+          ),
+          brightness: Brightness.dark,
+          bottomOpacity: 0.4,
+          backgroundColor: Color.fromRGBO(76, 49, 36, 1),
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
         ),
         backgroundColor: Color.fromRGBO(76, 49, 36, 1),
         body: _buildBody());

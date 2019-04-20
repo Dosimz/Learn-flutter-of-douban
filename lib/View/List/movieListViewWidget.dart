@@ -11,6 +11,7 @@ class MovieWidget extends StatefulWidget {
 }
 
 class _DouBanMovieState extends State<MovieWidget> {
+
   // 数据源
   List<Movie> movies = [];
   // 分页
@@ -28,7 +29,20 @@ class _DouBanMovieState extends State<MovieWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('豆瓣电影 Top250'),
+        title: Text('影榜'),
+        elevation: 0,
+        centerTitle: true,
+        leading: Builder(
+          builder: (BuildContext context){
+            return IconButton(
+              icon: const Icon(Icons.all_out),
+              onPressed: (){
+                Scaffold.of(context).openDrawer(); 
+              },
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+            );
+          },
+        ),
       ),
       body: new RefreshIndicator(
         child: _buildList(context),
@@ -95,5 +109,5 @@ class _DouBanMovieState extends State<MovieWidget> {
 }
 
 
-}
+
 

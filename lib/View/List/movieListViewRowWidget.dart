@@ -9,7 +9,8 @@ Widget buildListRow(int index, Movie movie, BuildContext context) {
   // TODO: 这样的跳转是根据布局进行的，如果布局未充满，则跳转失效
   return new Container(
     width: MediaQuery.of(context).size.width,
-    child: GestureDetector(
+    child:
+     GestureDetector(
         onTap: () {
           Navigator.push(
               context,
