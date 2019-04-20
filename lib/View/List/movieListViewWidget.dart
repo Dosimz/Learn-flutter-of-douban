@@ -15,6 +15,8 @@ class _DouBanMovieState extends State<MovieWidget> {
   List<Movie> movies = [];
   // 分页
   int page = 0;
+  // 收藏
+  // final _saved = new Set<Movie>();
 
   @override
   void initState() {
@@ -82,4 +84,16 @@ class _DouBanMovieState extends State<MovieWidget> {
       );
     }
   }
+// void _favorited() {
+//   setState((){
+//     if (alreadySaved){
+//       _saved.remove(pair);
+//     }else {
+//       _saved.add(pair);
+//     }
+//   });
 }
+
+
+}
+

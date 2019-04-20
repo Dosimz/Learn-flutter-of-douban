@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:movie_top_250/Model/movieModel.dart';
 import 'package:movie_top_250/View/Detail/movieDetailWidget.dart';
-
+// import 'package:movie_top_250/View/List/movieListViewWidget.dart';
+// final _saved = new Set<Movie>();
+// bool alreadySaved = false;
 Widget buildListRow(int index, Movie movie, BuildContext context) {
+  // alreadySaved = _saved.contains(movie);
   // TODO: 这样的跳转是根据布局进行的，如果布局未充满，则跳转失效
   return new Container(
     width: MediaQuery.of(context).size.width,
@@ -14,7 +17,7 @@ Widget buildListRow(int index, Movie movie, BuildContext context) {
                   builder: (context) => MovieDetailWidget(movie: movie, index: index)));
         },
         child: Padding(
-            padding: EdgeInsets.all(15),
+            padding: EdgeInsets.all(10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -23,9 +26,19 @@ Widget buildListRow(int index, Movie movie, BuildContext context) {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      _buildMoviePoster(movie),
-                      _buildTextContent(movie),
-                      _buildActionStar(),
+                      new Expanded(
+                        flex: 2,
+                        child: _buildMoviePoster(movie),
+                      ),
+                      new Expanded(
+                        flex: 4,
+                        child: _buildTextContent(movie),
+                      ),
+                      new Expanded(
+                        flex: 1,
+                        child: _buildActionStar(),
+                        ),
+                      
                                           ]
                                       ),
                                     ],
@@ -84,11 +97,16 @@ Widget _buildTextContent(Movie movie) {
 
 Widget  _buildActionStar() {
   return new Padding(
-    padding: EdgeInsets.fromLTRB(20, 5, 0, 0),
+    padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
     child: new Column(
       children: <Widget>[
-        new Icon(Icons.star_border,),
-        new Text('data'),
+         new Icon(
+           Icons.favorite_border,
+          // icon:(alreadySaved ? Icon(Icons.favorite) : Icon(Icons.favorite_border)), 
+          color: Color(0xFFF7AC3A),
+          // onPressed:_favorited,
+          ),
+        new Text('收藏', style: TextStyle(color: Color(0xFFF7AC3A)),),
       ],
     ),
   );
@@ -175,3 +193,4 @@ Widget _buildDetails(Movie movie) {
     style: TextStyle(color: Color.fromRGBO(130, 130, 130, 1)),
   );
 }
+

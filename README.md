@@ -17,4 +17,5 @@
 > ​	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif)
 >
 > ​	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif)
-
+>
+> ​	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif)
