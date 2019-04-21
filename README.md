@@ -18,14 +18,13 @@
 > 	​	第一个版本，仅实现了豆瓣电影 TOP250 的展示、电影详情。界面未美化。
 >
 
-### 	app 预览
-
-* <center class="half">
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="200" height="370" style="margin-right:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="200" height="370" style="margin-right:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="200" height="370" style="margin-right:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="200" height="370" style="margin-right:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="200" height="370" style="margin-right:10px;"/>
+* ### 	app 预览
+<center class="half">
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="200" height="370" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="200" height="370" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="200" height="370" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="200" height="370" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="200" height="370" style="margin:10px;"/>
 </center>
 
 
