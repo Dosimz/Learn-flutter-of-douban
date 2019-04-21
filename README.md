@@ -24,9 +24,10 @@
 <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="170" height="330" style="margin:10px;"/>
 <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="170" height="330" style="margin:10px;"/>
 <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="170" height="330" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="170" height="330" style="margin:10px;"/>
 </div>
 <div>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="170" height="330" style="margin:10px;"/>
+
 </div>
 
 
