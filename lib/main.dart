@@ -20,7 +20,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: '豆瓣电影 Top250',
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: Color.fromRGBO(245, 245, 245, 1),
+        scaffoldBackgroundColor: Color.fromRGBO(245, 245, 245, 1), 
       ),
       home: MovieWidget(),
     );

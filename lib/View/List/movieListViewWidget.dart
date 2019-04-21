@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_top_250/Service/movieApi.dart';
 import 'package:movie_top_250/Model/movieModel.dart';
 import 'package:movie_top_250/View/List/movieListViewRowWidget.dart';
+import 'package:movie_top_250/View/List/drawerList.dart';
 
 class MovieWidget extends StatefulWidget {
   @override
@@ -10,7 +11,10 @@ class MovieWidget extends StatefulWidget {
   }
 }
 
-class _DouBanMovieState extends State<MovieWidget> {
+class _DouBanMovieState extends State<MovieWidget> with TickerProviderStateMixin{
+
+  AnimationController controller;
+  Animation<double> animation;
 
   // 数据源
   List<Movie> movies = [];
@@ -23,13 +27,32 @@ class _DouBanMovieState extends State<MovieWidget> {
   void initState() {
     super.initState();
     _requestData();
+    //创建 AnimationController 对象
+    controller = AnimationController(
+      vsync: this, duration: const Duration(milliseconds: 2500));
+    final CurvedAnimation curve = CurvedAnimation(
+      parent: controller, curve: Curves.elasticOut);
+        //创建 Tween 对象 创建 Animation 对象
+    animation = Tween(begin: 0.0, end: 220.0).animate(curve)
+      ..addListener((){
+        setState(() {}); //重绘
+      });
+    controller.forward();
+  }
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose(); 
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('影榜'),
+        title: Padding(
+          padding: EdgeInsets.fromLTRB(animation.value, 0, 0, 0),
+          child: Text('影榜'),
+        ),
         elevation: 0,
         centerTitle: true,
         leading: Builder(
@@ -38,11 +61,14 @@ class _DouBanMovieState extends State<MovieWidget> {
               icon: const Icon(Icons.all_out),
               onPressed: (){
                 Scaffold.of(context).openDrawer(); 
-              },
+              }, 
               tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
             );
           },
         ),
+      ),
+      drawer: new Drawer(
+        child: HomeBuilder.homeDrawer(),
       ),
       body: new RefreshIndicator(
         child: _buildList(context),
@@ -98,14 +124,7 @@ class _DouBanMovieState extends State<MovieWidget> {
       );
     }
   }
-// void _favorited() {
-//   setState((){
-//     if (alreadySaved){
-//       _saved.remove(pair);
-//     }else {
-//       _saved.add(pair);
-//     }
-//   });
+
 }
 
 
