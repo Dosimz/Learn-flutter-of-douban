@@ -19,6 +19,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '豆瓣电影 Top250',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromRGBO(245, 245, 245, 1),
         scaffoldBackgroundColor: Color.fromRGBO(245, 245, 245, 1), 

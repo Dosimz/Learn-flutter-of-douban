@@ -51,14 +51,14 @@ class _DouBanMovieState extends State<MovieWidget> with TickerProviderStateMixin
       appBar: AppBar(
         title: Padding(
           padding: EdgeInsets.fromLTRB(animation.value, 0, 0, 0),
-          child: Text('影榜'),
+          child: Text('影榜',style: TextStyle(fontWeight: FontWeight.w600, color: Color.fromRGBO(97, 97, 97, 0.9)),),
         ),
         elevation: 0,
         centerTitle: true,
         leading: Builder(
           builder: (BuildContext context){
             return IconButton(
-              icon: const Icon(Icons.all_out),
+              icon: const Icon(Icons.all_out,color: Color.fromRGBO(97, 97, 97, 0.9), size: 34,),
               onPressed: (){
                 Scaffold.of(context).openDrawer(); 
               }, 

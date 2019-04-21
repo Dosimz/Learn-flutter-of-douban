@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:movie_top_250/Model/movieModel.dart';
 
 class MovieAPI {
+  // 解析并拿到 JSON
   Future<Movies> getMovieList(int start) async {
     var client = HttpClient();
     int page = start * 50;
