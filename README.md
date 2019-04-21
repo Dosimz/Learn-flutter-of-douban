@@ -19,13 +19,15 @@
 >
 
 * ### 	app 预览
-<center class="half">
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="200" height="370" style="margin:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="200" height="370" style="margin:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="200" height="370" style="margin:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="200" height="370" style="margin:10px;"/>
-<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="200" height="370" style="margin:10px;"/>
-</center>
+<div class="half">
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="170" height="330" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="170" height="330" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="170" height="330" style="margin:10px;"/>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="170" height="330" style="margin:10px;"/>
+</div>
+<div>
+<img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/drawerOver.gif" width="170" height="330" style="margin:10px;"/>
+</div>
 
 
 
