@@ -16,17 +16,8 @@
 > ​	第一个版本，仅实现了豆瓣电影 TOP250 的展示、电影详情。界面未美化。
 >
 ### 	app 预览
-* 4-19
-     ​	 <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="70" height="200" div align=center>
 
-* 4-20
-      ​	
-       	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif)
-* 4-20
-      ​	
-       	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif)
-* 4-21
-      ​	
-       	![image](https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif)
+* <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/initState.gif" width="320" height="550" />      <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/firstBug.gif" width="320" height="550" div align=center/>    <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/newActionStar.gif" width="320" height="550" div align=center/>    <img src="https://github.com/Dosimz/Learn-flutter-of-douban/blob/master/gifPhoto/UpdateUI.gif" width="320" height="550" div align=center/> 
+ 	
 
 
